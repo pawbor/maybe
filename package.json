@@ -1,5 +1,5 @@
 {
-  "name": "maybe",
+  "name": "@pawbor/maybe",
   "version": "0.0.0",
   "description": "Maybe monad implementation for JavaScript",
   "main": "./lib/maybe.js",
