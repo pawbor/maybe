@@ -1,0 +1,19 @@
+{
+  "defaultSeverity": "error",
+  "extends": ["tslint:all", "tslint-config-prettier"],
+  "jsRules": {},
+  "rules": {
+    "completed-docs": false,
+    "only-arrow-functions": false,
+    "interface-name": false,
+    "no-any": false,
+    "strict-boolean-expressions": false,
+    "typedef": false,
+    "newline-before-return": false,
+    "return-undefined": false,
+    "no-default-export": false,
+    "no-unused-variable": false,
+    "no-null-keyword": false
+  },
+  "rulesDirectory": []
+}

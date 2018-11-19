@@ -1,0 +1,13 @@
+{
+  "compilerOptions": {
+    "sourceMap": true,
+    "outDir": "lib",
+    "baseUrl": ".",
+    "lib": ["es2017"],
+    "strict": true,
+    "moduleResolution": "node",
+    "noUnusedLocals": true,
+    "plugins": [{ "name": "typescript-tslint-plugin" }]
+  },
+  "include": ["src"]
+}

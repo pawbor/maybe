@@ -1,0 +1,42 @@
+{
+  "name": "maybe",
+  "version": "0.0.0",
+  "description": "Maybe monad implementation for JavaScript",
+  "main": "./lib/maybe.js",
+  "types": "./lib/maybe.d.ts",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/pawbor/maybe.git"
+  },
+  "keywords": [
+    "maybe",
+    "option",
+    "monad"
+  ],
+  "author": "Paweł Borowski",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/pawbor/maybe/issues"
+  },
+  "homepage": "https://github.com/pawbor/maybe#readme",
+  "scripts": {
+    "build": "npm run clean-lib && npm run compile-lib",
+    "compile-lib": "tsc -p tsconfig.build.json",
+    "clean-lib": "rm -rf ./lib",
+    "lint": "tslint -p tsconfig.json",
+    "prepublishOnly": "npm run validate && npm run build",
+    "static": "tsc -p tsconfig.json --noEmit",
+    "test": "jest",
+    "test:watch": "jest --watch",
+    "validate": "npm run lint && npm run static && npm test"
+  },
+  "devDependencies": {
+    "@types/jest": "^23.3.9",
+    "jest": "^23.6.0",
+    "ts-jest": "^23.10.4",
+    "tslint": "^5.11.0",
+    "tslint-config-prettier": "^1.16.0",
+    "typescript": "^3.1.6",
+    "typescript-tslint-plugin": "^0.1.0"
+  }
+}
